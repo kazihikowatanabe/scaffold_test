@@ -24,17 +24,6 @@
   </tbody>
 </table>
 
-<div class="panel panel-default">
-  <div class="panel-body">
-    <%= form_tag(:method => :post, multipart: true) do %>
-      <div class="form-group">
-        <%= file_field_tag :csv_file %>
-      </div>
-      <%= submit_tag "CSVインポート", :class => "btn btn-primary" %>
-    <% end %>
-  </div>
-</div>
-
 <br>
 
 <%= link_to 'New User', new_user_path %>
